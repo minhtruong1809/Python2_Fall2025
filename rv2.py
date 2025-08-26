@@ -68,3 +68,4 @@ list1 = num_list
 print(id(num_list),id(list1))
 list2 = [num for num in num_list]
 print(id(num_list),id(list2))  
+print(id(num_list),id(list2)) 
