@@ -8,8 +8,9 @@ def main():
 
     for flavor in flavors:
         salsa_object = SalsaSales()
-        update_sales(flavor,salsa_object)
+        update_sales(flavor, salsa_object)
         salsa_objects.append(salsa_object)
+    display_report(salsa_objects)
     
 
 
@@ -27,6 +28,11 @@ def update_sales(flavor, salsa_object):
  
 def display_report(salsa_list):
     """display all salsa  objects"""
+    # display heading 
+    print(f'{"Flavors":10s}{"Jars sold":10s}{"Unit price":12s}{"Total price":12s}')
+
+    for salsa in salsa_list:
+        print(salsa)
     
 main()
 
