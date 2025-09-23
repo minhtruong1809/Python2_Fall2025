@@ -32,3 +32,4 @@ class Hourly_Paid(Employee):
         return self.hours * self.rate
 john_smith = Hourly_Paid('John Smith',30,20.5)
 print('John Smith made:' ,john_smith.pay(),'dollars this week.')
+
