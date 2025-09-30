@@ -1,5 +1,5 @@
 from invoice import Invoice
-from item import Item
+from item import Item                       # from Filename.py import class Item
 
 def main():
     """main function"""

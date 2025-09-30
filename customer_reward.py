@@ -15,6 +15,7 @@ class Customer:
     def name(self,name):
         """set the name"""
         self.__name= name
+    
     @property
     def purchases(self):
         """return the purchases"""
@@ -34,7 +35,7 @@ class Customer:
     
 class RetailCustomer(Customer):
     """Retail customer to keep track its reward"""
-    def __init__(self, name='', purchases=0.0, email=''):
+    def __init__(self, name='', purchases=0.0, email=''):       # super().__init__ to get previous information
         """initializer"""
         super().__init__(name,purchases)
         self.email = email
@@ -66,7 +67,7 @@ class RetailCustomer(Customer):
     
 class CoporateCustomer(Customer):
     """Corporate customer to keep track its reward"""
-    def __init__(self, name='', purchases=0, contact=''):
+    def __init__(self, name='', purchases=0, contact=''):                # super().__init__ to get previous information
         """initializer"""
         super().__init__(name, purchases)
         self.contact = contact
