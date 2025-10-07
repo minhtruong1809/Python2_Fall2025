@@ -1,0 +1,4 @@
+Python is fun to learn.
+Write another line.
+Using append to add a line.
+Add line using with open.
