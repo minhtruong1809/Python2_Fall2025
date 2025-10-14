@@ -1,0 +1,30 @@
+ # tuple is a index-based structure, like list, immutable, hashable, 
+>>> t = []
+>>> t = (1,2,3)
+>>> type(t)
+<class 'tuple'>
+>>> t = tuple()
+>>> t = (1)
+>>> type(t)
+<class 'int'>
+>>> t = (1,)
+>>> type(t)
+<class 'tuple'>
+>>> t = (1,'Hello',3.5,False)
+>>> type(t)
+<class 'tuple'>
+>>> t
+(1, 'Hello', 3.5, False)
+>>> t[0] = 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> t.append(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> t = (1, [1,2,3],False,5.6)
+>>> t[1].append(5)
+>>> t
+(1, [1, 2, 3, 5], False, 5.6)
+>>>
