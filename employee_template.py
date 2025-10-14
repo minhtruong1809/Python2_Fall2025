@@ -48,12 +48,12 @@ def main():
         employee_list = read_from_file(filename)
         display_employees(employee_list)
         total_pay = calc_total_salary(employee_list)
-        print = (f'Total Salary: ${total_pay:.2f}')
+        print(f'Total Salary: ${total_pay:.2f}')
 
 
     except FileNotFoundError as fe:
-        print(f'Error:{fe}')
-    except Exception as ex :
+        print(fe)
+    except Exception as ex:
         print(ex)
     else: 
         print(f'All file operations are complete.')
