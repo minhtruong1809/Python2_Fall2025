@@ -96,6 +96,17 @@ cs_students = {"David", "Eve", "Frank", "Alice"}
 print(f'Math students: {math_students}')
 print(f'CS students:{cs_students}')
 
+both_cs_math = math_students.intersection(cs_students)
+print(f'Student in both math and  cs: {both_cs_math}')
+
+only_math = math_students.difference(cs_students)
+print(f'Student only in math classes: {only_math}')
+
+either_math_cs = math_students.symmetric_difference(cs_students)
+print(f'Student in either math and cs classes: {either_math_cs}')
+
+
+
 
 '''
 Question 7: Filtering with sets for efficiency
@@ -108,6 +119,8 @@ in the list.
 '''
 user_ids = [101, 105, 203, 405, 501, 203, 101]
 banned_ids = {101, 501}
+not_banned_ids = set(user_ids) - banned_ids
+print(f'IDs not banned: {not_banned_ids}')
 
 
 #Combined tuple and set challenge questions
@@ -119,6 +132,14 @@ A tuple of numbers: (1, 2, 3)
 A list of numbers: [1, 2, 3]
 A tuple containing a list: (1, 2, [3, 4])
 '''
+
+s = {4,5,(1,2,3)}
+print(s)
+#s1 = {4,5,[1,2,3]}
+#print(s1)
+t = (1,2, [3,4])
+print(t)
+
 
 
 
